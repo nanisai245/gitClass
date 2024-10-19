@@ -35,14 +35,13 @@ console.log(sumE); //650
 //
 
 let parentInit = 2;
-let factorsCount, limit, childInit;
+let factorsCount, childInit;
 
 while (parentInit <= 20) {
   factorsCount = 0;
-  limit = parentInit;
   childInit = 2;
 
-  while (childInit <= limit) {
+  while (childInit <= parentInit) {
     if (parentInit % childInit === 0) {
       factorsCount++;
     }
